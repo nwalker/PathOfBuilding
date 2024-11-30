@@ -874,6 +874,8 @@ function calcs.initEnv(build, mode, override, specEnv)
 					end
 					if slot.parentSlot then
 						env.itemModDB.conditions[cond.."In"..slot.parentSlot.slotName] = true
+						local parentSlotMultiplier = item.baseName:gsub(" ","").."sIn"..slot.parentSlot.slotName
+						env.itemModDB.multipliers[parentSlotMultiplier] = (env.itemModDB.multipliers[parentSlotMultiplier] or 0) + 1
 					end
 					env.itemModDB.multipliers["AbyssJewel"] = (env.itemModDB.multipliers["AbyssJewel"] or 0) + 1
 					if item.rarity == "NORMAL" then env.itemModDB.multipliers["NormalAbyssJewels"] = (env.itemModDB.multipliers["NormalAbyssJewels"] or 0) + 1 end

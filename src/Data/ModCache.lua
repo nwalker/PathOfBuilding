@@ -192,8 +192,7 @@ c["+1 to maximum number of Raised Zombies per 300 Strength"]={{[1]={[1]={div=300
 c["+1 to maximum number of Raised Zombies per 500 Strength"]={{[1]={[1]={div=500,stat="Str",type="PerStat"},flags=0,keywordFlags=0,name="ActiveZombieLimit",type="BASE",value=1}},nil}
 c["+1 to maximum number of Skeletons"]={{[1]={flags=0,keywordFlags=0,name="ActiveSkeletonLimit",type="BASE",value=1}},nil}
 c["+1 to maximum number of Spectres"]={{[1]={flags=0,keywordFlags=0,name="ActiveSpectreLimit",type="BASE",value=1}},nil}
-c["+1 to maximum number of Spectres per Socketed Ghastly Eye Jewel"]={{[1]={flags=0,keywordFlags=0,name="ActiveSpectreLimit",type="BASE",value=1}},"  per Socketed Ghastly Eye Jewel "}
-c["+1 to maximum number of Spectres per Socketed Ghastly Eye Jewel You cannot have Non-Spectre Minions"]={{[1]={[1]={includeTransfigured=true,skillName="Raise Spectre",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ActiveSpectreLimit",type="BASE",value=1}}}},"  per Socketed Ghastly Eye Jewel You cannot have Non- Minions "}
+c["+1 to maximum number of Spectres per Socketed Ghastly Eye Jewel"]={{[1]={[1]={type="Multiplier",var="GhastlyEyeJewelsIn{SlotName}"},flags=0,keywordFlags=0,name="ActiveSpectreLimit",type="BASE",value=1}},nil}
 c["+1 to maximum number of Summoned Golems"]={{[1]={flags=0,keywordFlags=0,name="ActiveGolemLimit",type="BASE",value=1}},nil}
 c["+1 to maximum number of Summoned Golems if you have 3 Primordial Items Socketed or Equipped"]={{[1]={[1]={threshold=3,type="MultiplierThreshold",var="PrimordialItem"},flags=0,keywordFlags=0,name="ActiveGolemLimit",type="BASE",value=1}},nil}
 c["+1 to maximum number of Summoned Holy Relics"]={{[1]={flags=0,keywordFlags=0,name="ActiveHolyRelicLimit",type="BASE",value=1}},nil}

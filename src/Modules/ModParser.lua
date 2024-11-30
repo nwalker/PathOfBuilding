@@ -1322,6 +1322,7 @@ local modTagList = {
 	["for each empty blue socket on any equipped item"] = { tag = { type = "Multiplier", var = "EmptyBlueSocketsInAnySlot" } },
 	["for each empty white socket on any equipped item"] = { tag = { type = "Multiplier", var = "EmptyWhiteSocketsInAnySlot" } },
 	["per socketed gem"] = { tag = { type = "Multiplier", var = "SocketedGemsIn{SlotName}"}},
+	["per socketed ghastly eye jewel"] = { tag = { type = "Multiplier", var = "GhastlyEyeJewelsIn{SlotName}" } },
 	["for each impale on enemy"] = { tag = { type = "Multiplier", var = "ImpaleStacks", actor = "enemy" } },
 	["per impale on enemy"] = { tag = { type = "Multiplier", var = "ImpaleStacks", actor = "enemy" } },
 	["per animated weapon"] = { tag = { type = "Multiplier", var = "AnimatedWeapon", actor = "parent" } },
